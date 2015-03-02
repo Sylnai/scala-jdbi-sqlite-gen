@@ -48,5 +48,5 @@ if __name__ == "__main__":
 		result["entries"] = sql_to_typemap(result["sql"])
 		database.append(result)
 	#print(env.get_template("Types.scala").render(tables=database))
-	print(env.get_template("Mappers.scala").render(tables=database))
-	#print(env.get_template("Daos.scala").render(tables=database))
+	#print(env.get_template("Mappers.scala").render(tables=database))
+	print(env.get_template("Daos.scala").render(tables=database))
